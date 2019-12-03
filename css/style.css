@@ -1,0 +1,107 @@
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.float_l {
+    float: left;
+}
+
+.float_r {
+    float: right;
+}
+
+.col_gr {
+    color: rgb(3, 63, 3);
+}
+
+.fs_18 {
+    font-size: 18px;
+}
+
+.fs_12 {
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 0px;
+    border: black 3px solid;
+    background-color: rgba(224, 224, 61, 0.747);
+    color: rgb(166, 43, 223);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#box {
+    margin-top: 30px;
+    width: 860px;
+    height: 440px;
+    background-color: black;
+    position: relative;
+}
+
+#ball {
+    position: absolute;
+    width: 70px;
+    padding: 5px;
+    background-color: darkturquoise;
+    animation-name: ball;
+    animation-duration: 0ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ball {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
+#bar {
+    margin-top: 30px;
+    width: 230px;
+    height: 440px;
+    background-color: rgb(141, 227, 238);
+}
+
+.score {
+    margin-top: 17px;
+}
+
+#bar > div {
+    font-size: 15px;
+    width: 140px;
+    margin-left: 33px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border: black 1px solid;
+    background-color: rgb(241, 235, 235);
+}
+
+.high {
+    height: 96px;
+}
+
+.player {
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    top: -14px;
+    left: 95px;
+    padding: 2px 5px;
+    background-color: black;
+    color: white;
+    display: none;
+}
+
+.player:hover .date{
+    display: block;
+}
