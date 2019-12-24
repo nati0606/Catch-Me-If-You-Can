@@ -27,10 +27,11 @@
     font-weight: bold;
 }
 
-button {
+#btn_play {
     margin-top: 30px;
     width: 100%;
     padding: 10px 0px;
+    text-align: center;
     border: black 3px solid;
     background-color: rgba(224, 224, 61, 0.747);
     color: rgb(166, 43, 223);

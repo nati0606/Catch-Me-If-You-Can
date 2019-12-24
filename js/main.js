@@ -170,7 +170,6 @@ function addPoints(e) {
   scoreId.innerHTML = score;
   points -= 1;
   pointsId.innerHTML = points;
-
   addLevel();
 }
 
@@ -187,14 +186,14 @@ function addLevel() {
     pointsId.innerHTML = points;
   } else if (points == 0 && level == 5) {
     points = "--";
-    pointsId = points;
+    pointsId.innerHTML = points;
   }
 }
 
 
 function minPoints() {
   missClicks += level;
-  missClicksId.innerHTML = missClicks;
+  missClicksId.innerHTML = score - missClicks;
 }
 
 
@@ -202,7 +201,7 @@ function reset() {
   scoreId.innerHTML = 0;
   score = 0;
   pointsId.innerHTML = 10;
-  pointsId = 10;
+  points = 10;
   levelId.innerHTML = 1;
   level = 1;
   missClicksId.innerHTML = 0;
